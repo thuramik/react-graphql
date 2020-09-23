@@ -7,6 +7,7 @@ import { book } from './book';
 
 // Pages
 import { LoginPage } from '../pages/login';
+import { SignUpPage } from '../pages/signUp';
 
 export const Routes = () => (
     <>
@@ -16,6 +17,9 @@ export const Routes = () => (
             </Route>
             <Route exact path={book.login}>
                 <LoginPage />
+            </Route>
+            <Route exact path={book.signup}>
+                <SignUpPage />
             </Route>
         </Switch>
     </>
