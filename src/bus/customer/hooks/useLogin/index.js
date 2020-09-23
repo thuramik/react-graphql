@@ -13,9 +13,13 @@ export const useLogin = () => {
     const [_login, { error }] = useMutation(mutationLogin);
     const history = useHistory();
 
-    const authenticate = async () => {
+    const authenticate = async (customer) => {
         try {
-            const { data } = await _login();
+            const { data } = await _login({
+                variables: {
+                    customer
+                }
+            });
 
             if (data) {
                 history.push(book.tasks);
