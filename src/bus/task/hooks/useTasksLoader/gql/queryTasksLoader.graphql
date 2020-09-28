@@ -1,0 +1,8 @@
+query tasksLoader {
+    tasks {
+        id
+        title
+        description
+        resolved
+    }
+}

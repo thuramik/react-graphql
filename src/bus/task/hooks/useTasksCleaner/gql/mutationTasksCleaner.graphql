@@ -1,0 +1,5 @@
+mutation tasksCleaner {
+    removeAllTasks {
+        count
+    }
+}
